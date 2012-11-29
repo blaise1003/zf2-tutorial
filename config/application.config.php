@@ -8,7 +8,9 @@ return array(
         'config_glob_paths'    => array(
             'config/autoload/{,*.}{global,local}.php',
         ),
-        './module',
-        './vendor',
+        'module_paths' => array(
+        	'./module',
+        	'./vendor',
+    	),
     ),
 );
