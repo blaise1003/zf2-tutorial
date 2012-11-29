@@ -62,7 +62,7 @@ class AlbumControllerTest extends PHPUnit_Framework_TestCase
         $result   = $this->controller->dispatch($this->request);
         $response = $this->controller->getResponse();
 
-        $this->assertEquals(200, $response->getStatusCode());
+        $this->assertEquals(302, $response->getStatusCode());
     }
 
     public function testIndexActionCanBeAccessed()
